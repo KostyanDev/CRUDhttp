@@ -1,4 +1,4 @@
-module CRUDhttp
+module github.com/KostyanDev/CRUDhttp
 
 go 1.13
 

@@ -1,25 +1,31 @@
 package main
 
 import (
-	"net/http";
-	"os";
-	"github.com/gorilla/mux"
 	server "github.com/KostyanDev/CRUDhttp/helper"
+	"github.com/gorilla/mux"
+
+	//"net/http";
+	"os"
+	//_ "github.com/gorilla/mux"
 )
+
 var port string
 
-func init(){
+func init() {
 	port = os.Getenv("PORT")
 
-	if port == ""{
+	if port == "" {
 		panic("You need set port in .env file")
 	}
 }
 
-func main(){
-	//r := mux.NewRouter()
+func main() {
 
-	//s := server.NewServer()
+	rout := mux.NewRouter()
 
+	s := server.NewServer(rout, ":"+port)
+
+	// Start server
+	go server.StartServer(s)
 
 }

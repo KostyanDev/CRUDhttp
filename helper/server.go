@@ -8,12 +8,12 @@ import (
 	"time"
 )
 
-func NewServer(r *mux.Route, port string) *http.Server {
+func NewServer(r *mux.Router, port string) *http.Server {
 	return &http.Server{
-		Addr:         port,
-		Handler:      r,
-		ReadTimeout:  5 * time.Second,
-		WriteTimeout: 10 * time.Second,
+		Addr:         port,             // configure the bind address
+		Handler:      r,                // set the default handler
+		ReadTimeout:  5 * time.Second,  // max time to read request from the client
+		WriteTimeout: 10 * time.Second, // max time to write response to the client
 	}
 }
 
