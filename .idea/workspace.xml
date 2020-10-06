@@ -11,31 +11,18 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52097843-2273-4e39-a3cb-96a932e8f238" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/CRUDhttp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmd/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/helper/server.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/gorilla/mux/AUTHORS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/gorilla/mux/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/gorilla/mux/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/gorilla/mux/doc.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/gorilla/mux/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/gorilla/mux/middleware.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/gorilla/mux/mux.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/gorilla/mux/regexp.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/gorilla/mux/route.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/gorilla/mux/test_helpers.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/modules.txt" afterDir="false" />
+    <list default="true" id="52097843-2273-4e39-a3cb-96a932e8f238" name="Default Changelist" comment="Initial commit">
+      <change afterPath="$PROJECT_DIR$/server" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helper/data/fakeData.go" beforeDir="false" afterPath="$PROJECT_DIR$/helper/fakeData.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/request/get.go" beforeDir="false" afterPath="$PROJECT_DIR$/request/get.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,21 +41,26 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1iUl4owO6yy1k4xAmAZxsXg9Mij" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/helper" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -87,17 +79,38 @@
                   <entry key="Show.Git.Branches" value="true" />
                 </map>
               </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
             </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="add fake data and get request" />
+    <option name="LAST_COMMIT_MESSAGE" value="add fake data and get request" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="2631" y="332" width="559" height="423" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601970703715">
+    <state x="2711" y="376" width="400" height="334" key="#Go_Modules" timestamp="1601978490836">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2631" y="332" width="559" height="423" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1601970703715" />
+    <state x="2711" y="376" width="400" height="334" key="#Go_Modules/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1601978490836" />
+    <state x="2631" y="332" width="593" height="423" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601995529707">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2631" y="332" width="593" height="423" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1601995529707" />
     <state x="2699" y="298" width="447" height="498" key="FileChooserDialogImpl" timestamp="1601977657780">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -114,10 +127,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2405" y="175" key="SettingsEditor/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1601977788372" />
-    <state x="2511" y="272" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1601977505867">
+    <state x="2511" y="272" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1601992108333">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2511" y="272" width="800" height="543" key="Vcs.Push.Dialog.v2/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1601977505867" />
+    <state x="2511" y="272" width="800" height="543" key="Vcs.Push.Dialog.v2/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1601992108333" />
     <state x="2579" y="239" key="search.everywhere.popup" timestamp="1601977341544">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
