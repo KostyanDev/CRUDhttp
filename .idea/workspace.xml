@@ -6,12 +6,22 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
     </expand>
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
@@ -36,7 +46,7 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" path="/usr/lib/go-1.13" />
+  <component name="GOROOT" path="C:\Users\Admin\sdk\go1.15.2" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -54,15 +64,37 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="go.vendoring.notification.had.been.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../golang/httpCRUD-master" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/helper" />
       <recent name="$PROJECT_DIR$" />
     </key>
+  </component>
+  <component name="RunManager" selected="Makefile.Makefile (1)">
+    <configuration name="Makefile (1)" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/Makefile" target="" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
+    <configuration name="Makefile" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/Makefile" target="" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Makefile.Makefile (1)" />
+        <item itemvalue="Makefile.Makefile" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
@@ -84,7 +116,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="origin/master" />
                       </list>
                     </value>
                   </entry>
@@ -95,12 +127,14 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial commit" />
     <MESSAGE value="add fake data and get request" />
-    <option name="LAST_COMMIT_MESSAGE" value="add fake data and get request" />
+    <MESSAGE value="add get delete requests" />
+    <option name="LAST_COMMIT_MESSAGE" value="add get delete requests" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2711" y="376" width="400" height="334" key="#Go_Modules" timestamp="1601978490836">
@@ -111,9 +145,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2631" y="332" width="593" height="423" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1601995529707" />
-    <state x="2699" y="298" width="447" height="498" key="FileChooserDialogImpl" timestamp="1601977657780">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state x="779" y="287" width="447" height="498" key="FileChooserDialogImpl" timestamp="1602014553181">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="779" y="287" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1602014553181" />
     <state x="2699" y="298" width="447" height="498" key="FileChooserDialogImpl/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1601977657780" />
     <state width="261" height="161" key="Git.Branch.Popup" timestamp="1601977414012">
       <screen x="1920" y="0" width="1920" height="1080" />
@@ -123,17 +158,19 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2771" y="442" width="289" height="203" key="Github.ShareDialog/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1601976785311" />
-    <state x="2405" y="175" key="SettingsEditor" timestamp="1601977788372">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state x="485" y="169" key="SettingsEditor" timestamp="1602023634182">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="485" y="169" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1602023634182" />
     <state x="2405" y="175" key="SettingsEditor/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1601977788372" />
     <state x="2511" y="272" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1601992108333">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2511" y="272" width="800" height="543" key="Vcs.Push.Dialog.v2/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1601992108333" />
-    <state x="2579" y="239" key="search.everywhere.popup" timestamp="1601977341544">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state x="659" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1602023136253">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="659" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1602023136253" />
     <state x="2579" y="239" key="search.everywhere.popup/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1601977341544" />
   </component>
 </project>
