@@ -1,10 +1,12 @@
 package helper
 
 import (
+	"context"
 	"github.com/gorilla/mux"
 	"log"
 	"net/http"
 	"os"
+	"os/signal"
 	"time"
 )
 
@@ -24,5 +26,23 @@ func StartServer(s *http.Server) {
 	if err != nil {
 		log.Printf("Error when server starting: %s\n", err)
 		os.Exit(1)
+	}
+	Shutdown(s)
+}
+func Shutdown(s *http.Server) {
+	c := make(chan os.Signal, 1)
+	signal.Notify(c, os.Interrupt)
+	signal.Notify(c, os.Kill)
+
+	// Block until a signal is received.
+	sig := <-c
+	log.Println("Got signal:", sig)
+	defer close(c)
+
+	// gracefully shutdown the server, waiting max 30 seconds for current operations to complete
+	ctx, _ := context.WithTimeout(context.Background(), 30*time.Second)
+
+	if err := s.Shutdown(ctx); err != nil {
+		log.Printf("HTTP server Shutdown: %v", err)
 	}
 }
