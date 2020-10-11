@@ -2,7 +2,7 @@ package model
 
 type ToDoList struct {
 	Name   string `json:"brand"`
-	Status bool   `json: "status"`
+	Status string   `json: "status"`
 }
 
 //type Task struct {

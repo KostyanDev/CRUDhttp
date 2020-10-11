@@ -5,10 +5,7 @@ import (
 	handler "github.com/KostyanDev/CRUDhttp/request"
 	"github.com/gorilla/mux"
 	"net/http"
-
-	//"net/http";
 	"os"
-	//_ "github.com/gorilla/mux"
 )
 
 var port string
@@ -23,13 +20,25 @@ func init() {
 
 func main() {
 
-	rout := mux.NewRouter()
+	r := mux.NewRouter()
 
-	s := server.NewServer(rout, ":"+port)
 	// GET
-	rout.HandleFunc("/tasks", handler.HandlerGetToDoList).Methods(http.MethodGet)
+	r.HandleFunc("/tasks", handler.HandlerGetToDoList).Methods(http.MethodGet)
+	r.HandleFunc("/task/{id:[0-9]+}", handler.HandlerGetTask).Methods(http.MethodGet)
 
+	//POST
+	r.HandleFunc("/task", handler.HandlerCreateTodoList).Methods(http.MethodPost, http.MethodGet)
+
+	//UPDATE
+	r.HandleFunc("/tasks/{id:[0-9]+}", handler.HandlerUpdateTask).Methods(http.MethodPut)
+	//
+	//DELETE
+	r.HandleFunc("/tasks/{id:[0-9]+}", handler.HandlerDeleteList).Methods(http.MethodDelete)
+
+
+	s := server.NewServer(r, ":"+port)
 	// Start server
-	go server.StartServer(s)
+	server.StartServer(s)
 
 }
+

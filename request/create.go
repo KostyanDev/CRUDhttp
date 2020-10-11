@@ -3,22 +3,33 @@ package request
 import (
 	"fmt"
 	"net/http"
-	helper "github.com/KostyanDev/CRUDhttp/helper"
+	"github.com/KostyanDev/CRUDhttp/helper"
+	"os"
 )
 
-func CreateTodoList(w http.ResponseWriter, r *http.Request) {
+var port string
+
+func init() {
+	port = os.Getenv("PORT")
+	if port == "" {
+		panic("Set port!")
+	}
+}
+
+
+func HandlerCreateTodoList(w http.ResponseWriter, r *http.Request) {
 	if r.Method == http.MethodGet {
 		http.Redirect(w, r, "http://localhost:"+port+"/", http.StatusMovedPermanently)
 	}
 
-	var list helper.TodoList
+	var list helper.STRToDoList
 	if r.Method == http.MethodPost {
 		if r.Header.Get("Content-type") == "application/x-www-form-urlencoded" {
 			name := r.FormValue("name")
 			status := r.FormValue("status")
-			list = helper.ToDoList{
-				name: name,
-				status: status,
+			list = helper.STRToDoList{
+				Name: name,
+				Status: status,
 			}
 			if ok := helper.AddToDoList(&list); !ok {
 				http.Error(w, "Error adding a sell order.", http.StatusBadRequest)
@@ -31,12 +42,12 @@ func CreateTodoList(w http.ResponseWriter, r *http.Request) {
 				return
 			}
 
-			if ok := list.AddToDoList(&list); !ok {
+			if ok := helper.AddToDoList(&list); !ok {
 				http.Error(w, "Error adding a sell order.", http.StatusBadRequest)
 				return
 			}
 
-			fmt.Fprint(w, "(JSON) SUCCESS! Added new car sale announcement.")
+			fmt.Fprint(w, "New task added.")
 		}
 	}
 }

@@ -1,3 +1,5 @@
 github.com/KostyanDev/CRUDhttp v0.0.0-20201006093146-17491740b3fb h1:vDp89+c6TUvh+DuNx2htCifkSclyXf1JfD2zKWGuGdw=
+github.com/Vlad1slavZhuk/httpCRUD v0.0.0-20201005180532-678b0390678d h1:20wHlImgRvVjgI06WCmSgYJ9U/ePl4UEAE2hHcdJPfI=
+github.com/Vlad1slavZhuk/httpCRUD v0.0.0-20201005180532-678b0390678d/go.mod h1:ooy3EqugpFEsqW9uWqNvPh9K/QpA5LLWOtGWCc34X5k=
 github.com/gorilla/mux v1.8.0 h1:i40aqfkR1h2SlN9hojwV5ZA91wcXFOvkdNIeFDP5koI=
 github.com/gorilla/mux v1.8.0/go.mod h1:DVbg23sWSpFRCP0SfiEN6jmj59UnW/n46BH5rLB71So=

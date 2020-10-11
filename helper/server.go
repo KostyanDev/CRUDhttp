@@ -12,23 +12,26 @@ import (
 
 func NewServer(r *mux.Router, port string) *http.Server {
 	return &http.Server{
-		Addr:         port,             // configure the bind address
+		Addr:         port,          // configure the bind address
 		Handler:      r,                // set the default handler
 		ReadTimeout:  5 * time.Second,  // max time to read request from the client
 		WriteTimeout: 10 * time.Second, // max time to write response to the client
 	}
 }
 
+// Run - start server.
 func StartServer(s *http.Server) {
-	log.Println("Server started, port :", s.Addr)
+	log.Println("Starting server on port", s.Addr)
 
 	err := s.ListenAndServe()
 	if err != nil {
-		log.Printf("Error when server starting: %s\n", err)
+		log.Printf("Error starting server: %s\n", err)
 		os.Exit(1)
 	}
+
 	Shutdown(s)
 }
+// Shutdown - shutdown server after get signal - "Interrupt"
 func Shutdown(s *http.Server) {
 	c := make(chan os.Signal, 1)
 	signal.Notify(c, os.Interrupt)
