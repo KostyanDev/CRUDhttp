@@ -23,31 +23,15 @@ func HandlerCreateTodoList(w http.ResponseWriter, r *http.Request) {
 	}
 
 	var list helper.STRToDoList
-	if r.Method == http.MethodPost {
-		if r.Header.Get("Content-type") == "application/x-www-form-urlencoded" {
-			name := r.FormValue("name")
-			status := r.FormValue("status")
-			list = helper.STRToDoList{
-				Name: name,
-				Status: status,
-			}
-			if ok := helper.AddToDoList(&list); !ok {
-				http.Error(w, "Error adding a sell order.", http.StatusBadRequest)
-				return
-			}
-			fmt.Fprint(w, "(POST) SUCCESS! Added new task .")
-		}else {
-			if err := list.FromJSON(r.Body); err != nil {
-				http.Error(w, "Error retrieving data from JSON.", http.StatusBadRequest)
-				return
-			}
-
-			if ok := helper.AddToDoList(&list); !ok {
-				http.Error(w, "Error adding a sell order.", http.StatusBadRequest)
-				return
-			}
-
-			fmt.Fprint(w, "New task added.")
-		}
+	if err := list.FromJSON(r.Body); err != nil {
+		http.Error(w, "Error JSON data ", http.StatusBadRequest)
+		return
 	}
+
+	if ok := helper.AddToDoList(&list); !ok {
+		http.Error(w, "Error adding a sell order.", http.StatusBadRequest)
+		return
+	}
+
+	fmt.Fprint(w, "New task added.")
 }

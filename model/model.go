@@ -1,6 +1,6 @@
 package model
 
-type ToDoList struct {
+type STRToDoList struct {
 	Name   string `json:"brand"`
 	Status string   `json: "status"`
 }

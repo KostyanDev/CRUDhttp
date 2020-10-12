@@ -7,7 +7,7 @@ import (
 
 
 var (
-	toDoLists = []*model.STRToDoList{
+	ToDoLists = []*model.STRToDoList{
 		&model.STRToDoList{
 			id: 1,
 			Name:   "Move to shop",

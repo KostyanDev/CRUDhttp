@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"io"
 	model "github.com/KostyanDev/CRUDhttp/model"
+	"sync"
 )
 
 // ToJSON serializes.
@@ -18,17 +19,18 @@ func (list *model.STRToDoList) FromJSON(r io.Reader) error {
 	return e.Decode(list)
 }
 
+
 // GET methods
 func GetToDoList() []*model.STRToDoList {
 	rwm.Lock()
 	defer rwm.Unlock()
-	return toDoLists
+	return ToDoLists
 }
 
 func GetTask(id int64) (*model.STRToDoList, bool) {
 	rwm.Lock()
 	defer rwm.Unlock()
-	for _,list := range toDoLists{
+	for _,list := range ToDoLists{
 		if list.id == id {
 			return list, true
 		}
@@ -42,7 +44,7 @@ func GetTask(id int64) (*model.STRToDoList, bool) {
 func UpdateList(id int64, list *model.STRToDoList) bool {
 	rwm.Lock()
 	defer rwm.Unlock()
-	for _,task := range toDoLists{
+	for _,task := range ToDoLists{
 		if task.id == id {
 			if len(list.Name) != 0 || list.Name != ""{
 				task.Name = list.Name
@@ -67,7 +69,7 @@ func AddToDoList(list *model.STRToDoList) bool {
 		return false
 	}
 
-	toDoLists[lastID] = list
+	ToDoLists[lastID] = list
 	return true
 }
 
@@ -77,13 +79,13 @@ func DeleteCar(id int64) bool {
 	rwm.Lock()
 	defer rwm.Unlock()
 	isFind := false
-	for i, task := range toDoLists {
+	for i, task := range ToDoLists {
 		if task.id == id {
-			if i == len(toDoLists)-1 {
-				toDoLists[i] = nil
-				toDoLists = toDoLists[:i]
+			if i == len(ToDoLists)-1 {
+				ToDoLists[i] = nil
+				ToDoLists = ToDoLists[:i]
 			} else {
-				toDoLists = append(toDoLists[:i], toDoLists[i+1:]...)
+				ToDoLists = append(ToDoLists[:i], ToDoLists[i+1:]...)
 			}
 			isFind = true
 			break
@@ -95,7 +97,7 @@ func DeleteCar(id int64) bool {
 	}
 
 	var index int64 = 1
-	for _, task := range toDoLists {
+	for _, task := range ToDoLists {
 		if task.id != index {
 			task.id = index
 			index++
