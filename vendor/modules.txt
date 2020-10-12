@@ -1,3 +1,9 @@
+# github.com/KostyanDev/CRUDhttp v0.0.0-20201012074430-5b193f3e31a6
+## explicit
+github.com/KostyanDev/CRUDhttp/helper
+github.com/KostyanDev/CRUDhttp/helper/data
+github.com/KostyanDev/CRUDhttp/model
+github.com/KostyanDev/CRUDhttp/request
 # github.com/gorilla/mux v1.8.0
 ## explicit
 github.com/gorilla/mux

@@ -1,9 +1,9 @@
 package model
 
 type STRToDoList struct {
-	Id     int    `json:"id"`
+	id     int    `json:"id"`
 	Name   string `json:"brand"`
-	Status string `json:"status"`
+	Status string `json: "status"`
 }
 
 //type Task struct {

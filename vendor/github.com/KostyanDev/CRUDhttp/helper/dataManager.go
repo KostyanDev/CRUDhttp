@@ -53,7 +53,7 @@ func UpdateList(id int64, list *STRToDoList) bool {
 	rwm.Lock()
 	defer rwm.Unlock()
 	for _,task := range todoLists{
-		if task.Id == id {
+		if task.id == id {
 			if len(list.Name) != 0 || list.Name != ""{
 				task.Name = list.Name
 			}
@@ -88,7 +88,7 @@ func DeleteCar(id int64) bool {
 	defer rwm.Unlock()
 	isFind := false
 	for i, task := range todoLists {
-		if task.Id == id {
+		if task.id == id {
 			if i == len(todoLists)-1 {
 				todoLists[i] = nil
 				todoLists = todoLists[:i]
@@ -106,8 +106,8 @@ func DeleteCar(id int64) bool {
 
 	var index int64 = 1
 	for _, task := range todoLists {
-		if task.Id != index {
-			task.Id = index
+		if task.id != index {
+			task.id = index
 			index++
 		} else {
 			index++

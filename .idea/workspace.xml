@@ -27,10 +27,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52097843-2273-4e39-a3cb-96a932e8f238" name="Default Changelist" comment="Initial commit">
+      <change afterPath="$PROJECT_DIR$/vendor/github.com/KostyanDev/CRUDhttp/helper/data/data.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/github.com/KostyanDev/CRUDhttp/helper/dataManager.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/github.com/KostyanDev/CRUDhttp/helper/server.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/github.com/KostyanDev/CRUDhttp/model/model.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/github.com/KostyanDev/CRUDhttp/request/create.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/github.com/KostyanDev/CRUDhttp/request/delete.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/github.com/KostyanDev/CRUDhttp/request/get.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/github.com/KostyanDev/CRUDhttp/request/update.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/helper/data/data.go" beforeDir="false" afterPath="$PROJECT_DIR$/helper/data/data.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/helper/dataManager.go" beforeDir="false" afterPath="$PROJECT_DIR$/helper/dataManager.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/model.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/model.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/modules.txt" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/modules.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
