@@ -34,7 +34,7 @@ func HandlerGetTask(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	w.Header().Set("Content-Type", "application/json")
-	if list, ok := helper.GetTask(id); ok {
+	if list, ok := helper.GetTask(int64(id)); ok {
 		c, err := json.MarshalIndent(list, "", "   ")
 		if err != nil {
 			log.Fatal(err)

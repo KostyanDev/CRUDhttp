@@ -4,16 +4,28 @@ import (
 	"encoding/json"
 	"io"
 	model "github.com/KostyanDev/CRUDhttp/model"
-	data "github.com/KostyanDev/CRUDhttp/helper/data"
+
 	"sync"
 )
 
 type STRToDoList model.STRToDoList
 
+var todoLists = []*STRToDoList{
+	&STRToDoList{
+		Id: 1,
+		Name:   "Move to shop",
+		Status: "New",
+	},
+	&STRToDoList{
+		Id: 2,
+		Name:   "Buy present for birthday",
+		Status: "New",
+	},
+}
+
 var (
 	rwm sync.Mutex
-	lastID int = 3
-	todoLists = data.ToDoList
+	lastID int64 = 3
 )
 
 // ToJSON serializes.
@@ -39,7 +51,7 @@ func GetTask(id int64) (*STRToDoList, bool) {
 	rwm.Lock()
 	defer rwm.Unlock()
 	for _,list := range todoLists{
-		if list.id == id {
+		if list.Id == id {
 			return list, true
 		}
 	}
@@ -71,19 +83,24 @@ func UpdateList(id int64, list *STRToDoList) bool {
 func AddToDoList(list *STRToDoList) bool {
 	rwm.Lock()
 	defer rwm.Unlock()
-	lastID := int64(len(todoLists) + 1)
+	if len(todoLists) > 0 {
+		lastID = todoLists[len(todoLists)-1].Id + 1
+	} else {
+		lastID = 1
+	}
 
 	if list.Name == "" || list.Status == "" {
 		return false
 	}
 
-	todoLists[lastID] = list
+	list.Id = lastID
+	todoLists = append(todoLists, list)
 	return true
 }
 
 // Delete methods
 
-func DeleteCar(id int64) bool {
+func DeleteToDoList(id int64) bool {
 	rwm.Lock()
 	defer rwm.Unlock()
 	isFind := false

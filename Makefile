@@ -12,7 +12,7 @@ build:
 ## start: Start server.
 start: build
 	@echo "***** Start server... *****"
-	@echo "LINK -> http://localhost:ma$(PORT) <-"
+	@echo "LINK -> http://localhost:$(PORT) <-"
 	@./server
 
 ## clean: Remove server.exe

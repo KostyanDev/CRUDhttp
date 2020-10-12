@@ -15,7 +15,7 @@ func HandlerDeleteList(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "Error in ParseUint.", http.StatusInternalServerError)
 	}
 
-	if ok := helper.DeleteToDoList(id); !ok {
+	if ok := helper.DeleteToDoList(int64(id)); !ok {
 		http.Error(w, "Not found or was deleted.", http.StatusNotFound)
 	} else {
 		fmt.Fprintf(w, " Task №%v deleted", id)

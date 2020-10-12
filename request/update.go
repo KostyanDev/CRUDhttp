@@ -25,7 +25,7 @@ func HandlerUpdateTask(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	if ok := helper.UpdateList(id, &list); !ok {
+	if ok := helper.UpdateList(int64(id), &list); !ok {
 		http.Error(w, "Data update error.", http.StatusBadRequest)
 	} else {
 		fmt.Fprintf(w, " №%v task updated!", id)

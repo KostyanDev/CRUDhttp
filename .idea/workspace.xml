@@ -27,20 +27,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52097843-2273-4e39-a3cb-96a932e8f238" name="Default Changelist" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/KostyanDev/CRUDhttp/helper/data/data.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/KostyanDev/CRUDhttp/helper/dataManager.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/KostyanDev/CRUDhttp/helper/server.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/KostyanDev/CRUDhttp/model/model.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/KostyanDev/CRUDhttp/request/create.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/KostyanDev/CRUDhttp/request/delete.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/KostyanDev/CRUDhttp/request/get.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/KostyanDev/CRUDhttp/request/update.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/helper/data/data.go" beforeDir="false" afterPath="$PROJECT_DIR$/helper/data/data.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helper/data/data.go" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/helper/dataManager.go" beforeDir="false" afterPath="$PROJECT_DIR$/helper/dataManager.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/model.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/model.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/request/delete.go" beforeDir="false" afterPath="$PROJECT_DIR$/request/delete.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/request/get.go" beforeDir="false" afterPath="$PROJECT_DIR$/request/get.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/request/update.go" beforeDir="false" afterPath="$PROJECT_DIR$/request/update.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server" beforeDir="false" afterPath="$PROJECT_DIR$/server" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/KostyanDev/CRUDhttp/helper/data/data.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/KostyanDev/CRUDhttp/helper/dataManager.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/KostyanDev/CRUDhttp/helper/server.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/KostyanDev/CRUDhttp/model/model.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/KostyanDev/CRUDhttp/request/create.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/KostyanDev/CRUDhttp/request/delete.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/KostyanDev/CRUDhttp/request/get.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/KostyanDev/CRUDhttp/request/update.go" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/modules.txt" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/modules.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -171,22 +177,22 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2771" y="442" width="289" height="203" key="Github.ShareDialog/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1601976785311" />
-    <state width="1398" height="211" key="GridCell.Tab.0.bottom" timestamp="1602457255610">
+    <state width="1398" height="211" key="GridCell.Tab.0.bottom" timestamp="1602491406288">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
-    <state width="1398" height="211" key="GridCell.Tab.0.bottom/0.23.1440.819@0.23.1440.819" timestamp="1602457255610" />
-    <state width="1398" height="211" key="GridCell.Tab.0.center" timestamp="1602457255609">
+    <state width="1398" height="211" key="GridCell.Tab.0.bottom/0.23.1440.819@0.23.1440.819" timestamp="1602491406288" />
+    <state width="1398" height="211" key="GridCell.Tab.0.center" timestamp="1602491406286">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
-    <state width="1398" height="211" key="GridCell.Tab.0.center/0.23.1440.819@0.23.1440.819" timestamp="1602457255609" />
-    <state width="1398" height="211" key="GridCell.Tab.0.left" timestamp="1602457255609">
+    <state width="1398" height="211" key="GridCell.Tab.0.center/0.23.1440.819@0.23.1440.819" timestamp="1602491406286" />
+    <state width="1398" height="211" key="GridCell.Tab.0.left" timestamp="1602491406285">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
-    <state width="1398" height="211" key="GridCell.Tab.0.left/0.23.1440.819@0.23.1440.819" timestamp="1602457255609" />
-    <state width="1398" height="211" key="GridCell.Tab.0.right" timestamp="1602457255610">
+    <state width="1398" height="211" key="GridCell.Tab.0.left/0.23.1440.819@0.23.1440.819" timestamp="1602491406285" />
+    <state width="1398" height="211" key="GridCell.Tab.0.right" timestamp="1602491406287">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
-    <state width="1398" height="211" key="GridCell.Tab.0.right/0.23.1440.819@0.23.1440.819" timestamp="1602457255610" />
+    <state width="1398" height="211" key="GridCell.Tab.0.right/0.23.1440.819@0.23.1440.819" timestamp="1602491406287" />
     <state x="485" y="169" key="SettingsEditor" timestamp="1602023634182">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
