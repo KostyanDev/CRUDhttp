@@ -31,7 +31,6 @@
       <change beforePath="$PROJECT_DIR$/helper/data/data.go" beforeDir="false" afterPath="$PROJECT_DIR$/helper/data/data.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/helper/dataManager.go" beforeDir="false" afterPath="$PROJECT_DIR$/helper/dataManager.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/model.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/model.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/request/create.go" beforeDir="false" afterPath="$PROJECT_DIR$/request/create.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

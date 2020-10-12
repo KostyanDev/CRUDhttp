@@ -1,23 +1,21 @@
 package helper
 
 import (
-	"sync"
 	model "github.com/KostyanDev/CRUDhttp/model"
 )
-
+type STRToDoList model.STRToDoList
 
 var (
-	ToDoLists = []*model.STRToDoList{
-		&model.STRToDoList{
+	ToDoLists = []*STRToDoList{
+		&STRToDoList{
 			id: 1,
 			Name:   "Move to shop",
 			Status: "New",
 		},
-		&model.STRToDoList{
+		&STRToDoList{
 			id: 2,
 			Name:   "Buy present for birthday",
 			Status: "New",
 		},
 	}
-	rwm sync.Mutex
 )
