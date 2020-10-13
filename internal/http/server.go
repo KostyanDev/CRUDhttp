@@ -1,4 +1,4 @@
-package helper
+package http
 
 import (
 	"context"
@@ -9,6 +9,12 @@ import (
 	"os/signal"
 	"time"
 )
+type ClientServer struct {
+	Addr 			string
+	Handler 		*mux.Router
+	ReadTimeOut	   	time.Time
+	WriteTimeOit	 time.Time
+}
 
 func NewServer(r *mux.Router, port string) *http.Server {
 	return &http.Server{
@@ -31,6 +37,10 @@ func StartServer(s *http.Server) {
 
 	Shutdown(s)
 }
+
+func SetUpSubRouter(){
+
+}
 // Shutdown - shutdown server after get signal - "Interrupt"
 func Shutdown(s *http.Server) {
 	c := make(chan os.Signal, 1)
@@ -46,6 +56,6 @@ func Shutdown(s *http.Server) {
 	ctx, _ := context.WithTimeout(context.Background(), 30*time.Second)
 
 	if err := s.Shutdown(ctx); err != nil {
-		log.Printf("HTTP server Shutdown: %v", err)
+		log.Printf("http server Shutdown: %v", err)
 	}
 }
