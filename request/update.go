@@ -2,7 +2,7 @@ package request
 
 import (
 	"fmt"
-	 helper "github.com/KostyanDev/CRUDhttp/helper"
+	 helper "github.com/KostyanDev/CRUDhttp/internal/helper"
 	"github.com/gorilla/mux"
 	"log"
 	"net/http"

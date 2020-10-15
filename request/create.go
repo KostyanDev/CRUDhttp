@@ -3,7 +3,7 @@ package request
 import (
 	"fmt"
 	"net/http"
-	"github.com/KostyanDev/CRUDhttp/helper"
+	"github.com/KostyanDev/CRUDhttp/internal/helper"
 	"os"
 )
 

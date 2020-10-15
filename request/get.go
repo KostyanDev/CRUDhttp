@@ -6,7 +6,7 @@ import (
 	"github.com/gorilla/mux"
 	"strconv"
 
-	helper "github.com/KostyanDev/CRUDhttp/helper"
+	helper "github.com/KostyanDev/CRUDhttp/internal/helper"
 	"log"
 	"net/http"
 )

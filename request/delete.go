@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"strconv"
 	"github.com/gorilla/mux"
-	"github.com/KostyanDev/CRUDhttp/helper"
+	"github.com/KostyanDev/CRUDhttp/internal/helper"
 )
 
 func HandlerDeleteList(w http.ResponseWriter, r *http.Request) {

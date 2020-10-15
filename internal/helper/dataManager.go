@@ -3,7 +3,7 @@ package helper
 import (
 	"encoding/json"
 	"io"
-	model "github.com/KostyanDev/CRUDhttp/model"
+	model "github.com/KostyanDev/CRUDhttp/api/model"
 
 	"sync"
 )
