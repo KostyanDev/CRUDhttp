@@ -28,13 +28,10 @@
   <component name="ChangeListManager">
     <list default="true" id="52097843-2273-4e39-a3cb-96a932e8f238" name="Default Changelist" comment="Initial commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmd/http/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/http/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/helper/dataManager.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/helper/dataManager.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/request/create.go" beforeDir="false" afterPath="$PROJECT_DIR$/request/create.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/request/delete.go" beforeDir="false" afterPath="$PROJECT_DIR$/request/delete.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/request/get.go" beforeDir="false" afterPath="$PROJECT_DIR$/request/get.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/request/update.go" beforeDir="false" afterPath="$PROJECT_DIR$/request/update.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/http/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/http/server.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server" beforeDir="false" afterPath="$PROJECT_DIR$/server" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +69,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
-    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="true" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
@@ -81,7 +78,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -182,27 +179,27 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2771" y="442" width="289" height="203" key="Github.ShareDialog/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1601976785311" />
-    <state width="1398" height="211" key="GridCell.Tab.0.bottom" timestamp="1602756712948">
+    <state width="1398" height="211" key="GridCell.Tab.0.bottom" timestamp="1602769768269">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
-    <state width="1398" height="211" key="GridCell.Tab.0.bottom/0.23.1440.819@0.23.1440.819" timestamp="1602756712948" />
-    <state width="1398" height="211" key="GridCell.Tab.0.center" timestamp="1602756712947">
+    <state width="1398" height="211" key="GridCell.Tab.0.bottom/0.23.1440.819@0.23.1440.819" timestamp="1602769768269" />
+    <state width="1398" height="211" key="GridCell.Tab.0.center" timestamp="1602769768268">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
-    <state width="1398" height="211" key="GridCell.Tab.0.center/0.23.1440.819@0.23.1440.819" timestamp="1602756712947" />
-    <state width="1398" height="211" key="GridCell.Tab.0.left" timestamp="1602756712946">
+    <state width="1398" height="211" key="GridCell.Tab.0.center/0.23.1440.819@0.23.1440.819" timestamp="1602769768268" />
+    <state width="1398" height="211" key="GridCell.Tab.0.left" timestamp="1602769768267">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
-    <state width="1398" height="211" key="GridCell.Tab.0.left/0.23.1440.819@0.23.1440.819" timestamp="1602756712946" />
-    <state width="1398" height="211" key="GridCell.Tab.0.right" timestamp="1602756712948">
+    <state width="1398" height="211" key="GridCell.Tab.0.left/0.23.1440.819@0.23.1440.819" timestamp="1602769768267" />
+    <state width="1398" height="211" key="GridCell.Tab.0.right" timestamp="1602769768269">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
-    <state width="1398" height="211" key="GridCell.Tab.0.right/0.23.1440.819@0.23.1440.819" timestamp="1602756712948" />
-    <state x="364" y="120" key="SettingsEditor" timestamp="1602682540261">
+    <state width="1398" height="211" key="GridCell.Tab.0.right/0.23.1440.819@0.23.1440.819" timestamp="1602769768269" />
+    <state x="364" y="120" key="SettingsEditor" timestamp="1602763182161">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
     <state x="485" y="169" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1602023634182" />
-    <state x="364" y="120" key="SettingsEditor/0.23.1440.819@0.23.1440.819" timestamp="1602682540261" />
+    <state x="364" y="120" key="SettingsEditor/0.23.1440.819@0.23.1440.819" timestamp="1602763182161" />
     <state x="2405" y="175" key="SettingsEditor/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1601977788372" />
     <state x="2511" y="272" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1601992108333">
       <screen x="1920" y="0" width="1920" height="1080" />

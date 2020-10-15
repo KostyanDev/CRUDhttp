@@ -6,7 +6,7 @@ default: help
 ## build: Building server.
 build:
 	@echo "***** Building... *****"
-	@go build -o server cmd/main.go
+	@go build -o server cmd/http/main.go
 	@echo "Success!"
 
 ## start: Start server.

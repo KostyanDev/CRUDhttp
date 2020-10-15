@@ -1,7 +1,7 @@
 package main
 
 import (
-	server "github.com/KostyanDev/CRUDhttp/internal/helper"
+	server "github.com/KostyanDev/CRUDhttp/internal/http"
 	handler "github.com/KostyanDev/CRUDhttp/request"
 	"github.com/gorilla/mux"
 	"net/http"

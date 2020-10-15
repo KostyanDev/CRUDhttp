@@ -53,7 +53,7 @@ func Shutdown(s *http.Server) {
 	defer close(c)
 
 	// gracefully shutdown the server, waiting max 30 seconds for current operations to complete
-	ctx, _ := context.WithTimeout(context.Background(), 30*time.Second)
+	ctx,_ := context.WithTimeout(context.Background(), 30*time.Second)
 
 	if err := s.Shutdown(ctx); err != nil {
 		log.Printf("http server Shutdown: %v", err)
